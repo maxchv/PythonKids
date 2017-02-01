@@ -1,7 +1,7 @@
 # http://www.codeskulptor.org/#user12_6vaz1HhhOq_80.py
 # http://www.codeskulptor.org/#user12_JXilvVaUvP3CKjC.py
 # "Stopwatch: The Game"
-import simplegui
+import simpleguitk as simplegui
 import math
 
 # define global variables

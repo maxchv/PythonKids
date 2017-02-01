@@ -81,8 +81,6 @@ def get_input(guess):
         print("Secret number was ", secret_number, "\n")
         init()
 
-    #
-
 
 def draw(canvas):
     canvas.draw_text(message, (width / 2 - len(message) * 11 / 2, height / 3), 20, "Lime")
