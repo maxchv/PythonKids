@@ -33,10 +33,10 @@ message2 = ""
 def init():
     global secret_number, remaining_guesses, message
     secret_number = random.randrange(0, num_range)
-    print("New game. Ragne is from 0 to", num_range)
+    print("Новая игра. Диапазон от 0 до", num_range)
     remaining_guesses = math.ceil(math.log(num_range, 2))
     print("Number of remaining guesses is ", remaining_guesses, "\n")
-    message = "New game [0 " + str(num_range) + ")"
+    message = "Новая игра [0 " + str(num_range) + ")"
 
 
 # define event handlers for control panel    
@@ -88,12 +88,12 @@ def draw(canvas):
 
 
 # create frame
-frame = simplegui.create_frame("Guess the number", width, height)
+frame = simplegui.create_frame("Угадай число", width, height)
 
 # register event handlers for control elements
-frame.add_button("Range [0, 100)", range100, 200)
-frame.add_button("Range [0, 1000)", range1000, 200)
-frame.add_input("Enter a guess", get_input, 200)
+frame.add_button("Диапазон [0, 100)", range100, 200)
+frame.add_button("Диапазон [0, 1000)", range1000, 200)
+frame.add_input("Введите число", get_input, 200)
 
 frame.set_draw_handler(draw)
 
