@@ -66,19 +66,19 @@ def get_input(guess):
     print("Number of remaining guesses is ", remaining_guesses)
     if remaining_guesses > 0:
         if g > secret_number:
-            message2 = "Lower!"
-            print("Lower!\n")
+            message2 = "Меньше!"
+            print("Меньше!\n")
         elif g < secret_number:
-            message2 = "Higher!"
-            print("Higher!\n")
+            message2 = "Больше!"
+            print("Больше!\n")
         else:
-            message2 = "Correct!"
-            print("Correct!\n")
+            message2 = "Угадал!"
+            print("Угадал!\n")
             init()
     else:
-        message2 = "You are loser"
-        print("You did not guess secret number.")
-        print("Secret number was ", secret_number, "\n")
+        message2 = "Ты проиграл"
+        print("Ты не угадал.")
+        print("Было загадано число ", secret_number, "\n")
         init()
 
 
